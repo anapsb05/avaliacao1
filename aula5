@@ -1,0 +1,20 @@
+pontos = [{"nome": "RJP32", "coordenadas": [-25,-48]},
+          {"nome": "KUS12", "coordenadas": [-26,-47]},
+          {"nome": "JTD54", "coordenadas": [-27,-49]}]
+
+#print(f"O nome do ponto é: {}, a Latitude é: {} e a longtiude é:{}")
+#for linha in pontos:
+   #print(f'''
+      #  O nome do ponto é: {linha["nome:"]}
+      #  A Latitude é: {linha["coordenadas"][0]}
+     #   A longtiude é:{linha["coordenadas"][1]}''') 
+
+nome_pesquisado = input("Digite o nome do seu ponto ")
+encontrado = False
+for i in pontos:
+    if nome_pesquisado.upper() == i["nome"].upper():
+        print(f"o ponto: {i["nome"]} tem latitude {i["coordenadas"][0]}")
+        encontrado = True
+if encontrado == False:
+    print("o ponto não está na lista")
+            
